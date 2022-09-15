@@ -1,5 +1,5 @@
 <?php
-Class Modele_hello{
+Class Modele_anabase{
 	private $conn;
 	
 	public function __construct(){

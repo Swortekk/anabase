@@ -1,5 +1,5 @@
 <?php
-include ("./modele/modele.hello.php");
+include ("./modele/modele.anabase.php");
 Class Controleur_session{
 	// --- champs de base du controleur
 	public $vue=""; //vue appelée par le controleur
@@ -19,7 +19,7 @@ Class Controleur_session{
 	public function __construct(){
 		// déclarer la vue
 		$this->vue = "hello";
-		$this->modele = new Modele_hello();	
+		$this->modele = new Modele_anabase();	
 	}
 	
 	public function todo_initialiser(){

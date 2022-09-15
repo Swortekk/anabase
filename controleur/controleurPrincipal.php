@@ -3,7 +3,7 @@
 function controleurPrincipal($action){
     $lesActions = array();
     $lesActions["defaut"] = "controleur.hello.php";
-    $lesActions["hello"] = "controleur.hello.php";
+    $lesActions["session"] = "controleur.session.php";
     $lesActions["hello"] = "controleur.hello.php";
 
     
@@ -13,7 +13,7 @@ function controleurPrincipal($action){
     else{
         return $lesActions["defaut"];
     }
-//caca
+
 }
 
 ?>

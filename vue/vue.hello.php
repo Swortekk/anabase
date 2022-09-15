@@ -3,7 +3,7 @@ include "./vue/entete.html.php";
 ?>
 <h2>Formulaire Hello</h2>
 <div  class="form">
-<form class="form_content" action="./?controleur=hello" method="POST">
+<form class="form_content" action="./?controleur=session" method="POST">
 
 <div class="container">
     <input type="text" name="nom" placeholder="Saisir un nom" value="<?= $c->post["nom"] ?>" /><br />
