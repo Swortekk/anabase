@@ -18,26 +18,29 @@ Class Controleur_session{
 	// --- Constructeur
 	public function __construct(){
 		// déclarer la vue
-		$this->vue = "hello";
+		$this->vue = "session";
 		$this->modele = new Modele_anabase();	
 	}
 	
 	public function todo_initialiser(){
-		$this->post["nom"] = "";
-		$this->data["liste"] = $this->modele->getListeNom();
-	}
+		$this->post["nomSession"] = "";
+	 	$this->post["numSession"] = "";
+		$this->post["dateSession"] = "";
+		$this->post["heureSession"] = "";
+		$this->post["prixSession"] = "";
+	 	//$this->data["liste"] = $this->modele->getListeNom();
+	 }
 	
-	public function todo_enregistrer(){
-		if (empty($this->post["nom"])){
-			echo "impossible";
-			$this->data["liste"] = $this->modele->getListeNom();
+	// public function todo_enregistrer(){
+	// 	if (empty($this->post["nom"])){
+	// 		echo "impossible";
+	// 		$this->data["liste"] = $this->modele->getListeNom();
 
-		}else{
-			$this->data["liste"] = $this->modele->insererNom($this->post["nom"]);
-			$this->data["liste"] = $this->modele->getListeNom();
-		}
+	// 	}else{
+	// 		$this->data["liste"] = $this->modele->insererNom($this->post["nom"]);
+	// 		$this->data["liste"] = $this->modele->getListeNom();
+	// 	}
 		
 	
-	}
+	//}
 }
-?>

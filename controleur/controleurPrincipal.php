@@ -2,9 +2,9 @@
 
 function controleurPrincipal($action){
     $lesActions = array();
-    $lesActions["defaut"] = "controleur.hello.php";
+
+    $lesActions["defaut"] = "controleur.session.php";
     $lesActions["session"] = "controleur.session.php";
-    $lesActions["hello"] = "controleur.hello.php";
 
     
     if (array_key_exists ( $action , $lesActions )){

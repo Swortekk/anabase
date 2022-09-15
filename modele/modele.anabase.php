@@ -19,17 +19,17 @@ Class Modele_anabase{
 	}
 	
 	public function getListeNom(){
-		$req = $this->conn->prepare ("select * from hello");
+		$req = $this->conn->prepare ("select * from session");
 		
 		$req->execute();
 		
 		return $req->fetchAll(PDO::FETCH_OBJ);
 	}
 	
-	public function insererNom($nom){
-		$req = $this->conn->prepare("insert into hello values (null, :nom)");
-		$req->bindValue(":nom",$nom);
-		$req->execute();
+	// public function insererNom($nom){
+	// 	$req = $this->conn->prepare("insert into session values (null, :nom)");
+	// 	$req->bindValue(":nom",$nom);
+	// 	$req->execute();
 		
-	}
+	// }
 }

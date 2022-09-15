@@ -23,8 +23,6 @@ $c=new $class();
 
 // -- renseigne le champ post du controleur instancié	
 $c->post = $_POST;
-
-		
 //--- todo : callback
 if (isset($_REQUEST["todo"])){
     $todo = $_REQUEST["todo"];
@@ -37,6 +35,4 @@ else{
 $callback="todo_".$todo;
 $call=call_user_func_array(array($c,$callback), array()); 
 
-include ("./vue/vue." . $c->vue . ".php");		
-?>
-     
+include ("./vue/vue." . $c->vue . ".php");
