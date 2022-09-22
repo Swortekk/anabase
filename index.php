@@ -1,5 +1,6 @@
 <?php
 include "./controleur/controleurPrincipal.php";
+include "./vue/vue.menu.php";
 
 //--- controleur
 if (isset($_REQUEST["controleur"])){
